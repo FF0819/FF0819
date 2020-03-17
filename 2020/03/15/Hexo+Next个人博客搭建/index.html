@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Github Pages,HTML5," />
+  <meta name="keywords" content="Github Pages,Hexo,Next," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Hexo+Next个人博客搭建前言本文是在WIN10的环境下完成搭建，文中的一些操作也是根据个人搭建过程来记录。 安装Hexo安装前提安装Hexo需要先安装下列应用程序： Node.js (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)Git 我想大概搞前端开发的应该都会和Node.js打交道，Git的话我想大概写代码的都会和它打交道。这里我之前没理解为什">
+<meta name="description" content="Hexo+Next个人博客搭建前言本文是在WIN10的环境下完成搭建，文中的一些操作也是根据个人搭建过程来记录。 本文参考链接Hexo官方使用文档Next官方使用文档 安装Hexo安装前提安装Hexo需要先安装下列应用程序： Node.js (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)Git 我想大概搞前端开发的应该都会和Node.js打交道，Git的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Next个人博客搭建">
 <meta property="og:url" content="https://ff0819.github.io/blog/2020/03/15/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="FF&#39;s Blog">
-<meta property="og:description" content="Hexo+Next个人博客搭建前言本文是在WIN10的环境下完成搭建，文中的一些操作也是根据个人搭建过程来记录。 安装Hexo安装前提安装Hexo需要先安装下列应用程序： Node.js (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)Git 我想大概搞前端开发的应该都会和Node.js打交道，Git的话我想大概写代码的都会和它打交道。这里我之前没理解为什">
+<meta property="og:description" content="Hexo+Next个人博客搭建前言本文是在WIN10的环境下完成搭建，文中的一些操作也是根据个人搭建过程来记录。 本文参考链接Hexo官方使用文档Next官方使用文档 安装Hexo安装前提安装Hexo需要先安装下列应用程序： Node.js (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)Git 我想大概搞前端开发的应该都会和Node.js打交道，Git的">
 <meta property="article:published_time" content="2020-03-15T08:31:10.261Z">
-<meta property="article:modified_time" content="2020-03-15T08:28:08.040Z">
+<meta property="article:modified_time" content="2020-03-17T06:32:43.269Z">
 <meta property="article:author" content="FF">
 <meta property="article:tag" content="Github Pages">
-<meta property="article:tag" content="HTML5">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Next">
 <meta name="twitter:card" content="summary">
 
 
@@ -191,12 +192,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/blog/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            归档
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -238,7 +249,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FF">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="image" content="/blog/images/ava.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -285,8 +296,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
+                  <a href="/blog/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url" rel="index">
+                    <span itemprop="name">个人博客的配置与优化</span>
                   </a>
                 </span>
 
@@ -323,6 +334,7 @@
 
       
         <h2 id="Hexo-Next个人博客搭建"><a href="#Hexo-Next个人博客搭建" class="headerlink" title="Hexo+Next个人博客搭建"></a>Hexo+Next个人博客搭建</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本文是在WIN10的环境下完成搭建，文中的一些操作也是根据个人搭建过程来记录。</p>
+<h5 id="本文参考链接"><a href="#本文参考链接" class="headerlink" title="本文参考链接"></a>本文参考链接</h5><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener" title="Hexo官方使用文档">Hexo官方使用文档</a><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener" title="Next官方使用文档">Next官方使用文档</a></p>
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><h4 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h4><p>安装Hexo需要先安装下列应用程序：</p>
 <p><a href="https://nodejs.org/en/" target="_blank" rel="noopener" title="Node.js">Node.js</a> (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)<br><a href="https://git-scm.com/" target="_blank" rel="noopener" title="Git">Git</a></p>
 <p>我想大概搞前端开发的应该都会和Node.js打交道，Git的话我想大概写代码的都会和它打交道。<br>这里我之前没理解为什么会在这里用到Git，之后看到了hexo init指令的输入信息里发现hexo init实质上是去 <a href="https://github.com/hexojs/hexo-starter.git" target="_blank" rel="noopener">https://github.com/hexojs/hexo-starter.git</a> 复制项目。</p>
@@ -398,18 +410,26 @@
 
 <h5 id="语言设置"><a href="#语言设置" class="headerlink" title="语言设置"></a>语言设置</h5><p>这一部分在之前站点配置文件中已经修改过了，而之后修改菜单项对应字段则是在主题文件夹中的languages里进行修改。</p>
 <h5 id="菜单配置"><a href="#菜单配置" class="headerlink" title="菜单配置"></a>菜单配置</h5><p>这里如果是用的项目站点需要注意主题配置文件的menu配置，这会影响到你个人博客的站内链接的有效性。默认情况下只有archives和home两个配置客可以使用，这个在后面配置了标签、分类、搜索等功能后也需要在这里进行修改：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># Menu Settings</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -&gt; archives).</span></span><br><span class="line"><span class="comment"># Usage: `Key: /link/ || icon` </span></span><br><span class="line"><span class="comment"># Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.</span></span><br><span class="line"><span class="comment"># Value before `||` delimeter is the target link.</span></span><br><span class="line"><span class="comment"># Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">archives||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># Menu Settings</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -&gt; archives).</span></span><br><span class="line"><span class="comment"># Usage: `Key: /link/ || icon` </span></span><br><span class="line"><span class="comment"># Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.</span></span><br><span class="line"><span class="comment"># Value before `||` delimeter is the target link.</span></span><br><span class="line"><span class="comment"># Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span></span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  <span class="comment">#archives: archives|| archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
 
 <p>个人目前使用情况是向上述代码这样写才能保证站内访问的正确性，要注意/与||之间不要留空格（不知道他的代码是怎么解析这个地址的，有空格的话会把空格解析成%20）||后面的内容是用来指定该按钮的icon样式，其采用的FontAwesome图标样式。</p>
+<p>另外这里建议把archives注释掉。在我自己搭建的过程中发现，这里的链接是对sidebar那三个“日志、分类、标签”按钮是有影响的。唯独日志这个按钮会因为上面这种||写法导致连接的地址出现问题。这应该是个BUG，而且在配置文件中也没有放出对sidebar这几个按钮的链接设置问题。</p>
 <h5 id="侧栏头像配置"><a href="#侧栏头像配置" class="headerlink" title="侧栏头像配置"></a>侧栏头像配置</h5><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sidebar Avatar</span></span><br><span class="line"><span class="comment"># in theme directory(source/images): /images/avatar.gif</span></span><br><span class="line"><span class="comment"># in site  directory(source/uploads): /uploads/avatar.gif</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/images/ava.jpg</span></span><br></pre></td></tr></table></figure>
 
 <p>这里把你的头像文件放在你的主题文件夹相应的位置。当然也可以用外链的形式链接你的图片。</p>
-<h5 id="侧栏导航配置"><a href="#侧栏导航配置" class="headerlink" title="侧栏导航配置"></a>侧栏导航配置</h5><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/ff0819</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:2578840587@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line">  <span class="attr">Site:</span> <span class="string">https://ff0819.githun.io</span> <span class="string">||</span> <span class="string">google</span></span><br><span class="line">  <span class="comment">#Twitter: https://twitter.com/yourname || twitter</span></span><br><span class="line">  <span class="comment">#FB Page: https://www.facebook.com/yourname || facebook</span></span><br><span class="line">  <span class="comment">#VK Group: https://vk.com/yourname || vk</span></span><br><span class="line">  <span class="comment">#StackOverflow: https://stackoverflow.com/yourname || stack-overflow</span></span><br><span class="line">  <span class="comment">#YouTube: https://youtube.com/yourname || youtube</span></span><br><span class="line">  <span class="comment">#Instagram: https://instagram.com/yourname || instagram</span></span><br><span class="line">  <span class="comment">#Skype: skype:yourname?call|chat || skype</span></span><br></pre></td></tr></table></figure>
+<h5 id="侧栏导航配置"><a href="#侧栏导航配置" class="headerlink" title="侧栏导航配置"></a>侧栏导航配置</h5><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/ff0819</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:2578840587@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line">  <span class="attr">Site:</span> <span class="string">https://ff0819.github.io</span> <span class="string">||</span> <span class="string">google</span></span><br><span class="line">  <span class="comment">#Twitter: https://twitter.com/yourname || twitter</span></span><br><span class="line">  <span class="comment">#FB Page: https://www.facebook.com/yourname || facebook</span></span><br><span class="line">  <span class="comment">#VK Group: https://vk.com/yourname || vk</span></span><br><span class="line">  <span class="comment">#StackOverflow: https://stackoverflow.com/yourname || stack-overflow</span></span><br><span class="line">  <span class="comment">#YouTube: https://youtube.com/yourname || youtube</span></span><br><span class="line">  <span class="comment">#Instagram: https://instagram.com/yourname || instagram</span></span><br><span class="line">  <span class="comment">#Skype: skype:yourname?call|chat || skype</span></span><br></pre></td></tr></table></figure>
 
 <p>和菜单下的按钮配置导航同理，不过这里因为不存在地址拼接的问题所以不会出现上述的空格问题。</p>
 <h5 id="作者昵称设置"><a href="#作者昵称设置" class="headerlink" title="作者昵称设置"></a>作者昵称设置</h5><p>编辑站点配置文件，设置author为你的昵称。</p>
 <h5 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h5><p>编辑 站点配置文件，设置description字段为你的站点描述。</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>这样一个基本的个人博客已经完成了，后续会再写一篇博客来介绍我集成的三方服务以及其他风格配置修改。</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><h4 id="Github-Pages的限制"><a href="#Github-Pages的限制" class="headerlink" title="Github Pages的限制"></a>Github Pages的限制</h4><p>Github Pages 并不是无限存储和无限流量的静态站点服务，一些限制如下：</p>
+<ul>
+<li>内容存储不能超过1GB。</li>
+<li>每个月100GB流量带宽。</li>
+<li>每小时编译构建次数不超过10次。</li>
+</ul>
+<p>更多参看官方说明：<a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits" target="_blank" rel="noopener" title="Github Pages官方文档">Github Pages官方文档</a></p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这样一个基本的个人博客已经完成了，后续的一些配置打算放在一个配置与优化系列中说明，毕竟这种个人项目的博客配置与优化是一个长期的过程，希望自己能在这个过程中不断成长。</p>
 
       
     </div>
@@ -429,7 +449,9 @@
           
             <a href="/blog/tags/Github-Pages/" rel="tag"># Github Pages</a>
           
-            <a href="/blog/tags/HTML5/" rel="tag"># HTML5</a>
+            <a href="/blog/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/blog/tags/Next/" rel="tag"># Next</a>
           
         </div>
       
@@ -516,6 +538,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/blog/images/ava.jpg"
+                alt="FF" />
+            
               <p class="site-author-name" itemprop="name">FF</p>
               <p class="site-description motion-element" itemprop="description">Hello My Blog!</p>
           </div>
@@ -525,9 +551,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/blog/archives%7C%7C%20archive">
+                <a href="/blog/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -537,10 +563,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -548,10 +574,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -559,6 +585,28 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ff0819" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:2578840587@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://ff0819.githun.io" target="_blank" title="Site">
+                      
+                        <i class="fa fa-fw fa-google"></i>Site</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -582,7 +630,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Next个人博客搭建"><span class="nav-number">1.</span> <span class="nav-text">Hexo+Next个人博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装前提"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo建站"><span class="nav-number">1.3.</span> <span class="nav-text">Hexo建站</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化脚手架"><span class="nav-number">1.3.1.</span> <span class="nav-text">初始化脚手架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">1.3.2.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-json"><span class="nav-number">1.3.3.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scaffolds"><span class="nav-number">1.3.4.</span> <span class="nav-text">scaffolds</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source"><span class="nav-number">1.3.5.</span> <span class="nav-text">source</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#themes"><span class="nav-number">1.3.6.</span> <span class="nav-text">themes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地运行"><span class="nav-number">1.3.7.</span> <span class="nav-text">本地运行</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">1.4.</span> <span class="nav-text">修改站点配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网站信息"><span class="nav-number">1.4.1.</span> <span class="nav-text">网站信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网址"><span class="nav-number">1.4.2.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署配置"><span class="nav-number">1.4.3.</span> <span class="nav-text">部署配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Next主题"><span class="nav-number">1.5.</span> <span class="nav-text">Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Next"><span class="nav-number">1.5.1.</span> <span class="nav-text">安装Next</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Next主题设定"><span class="nav-number">1.5.2.</span> <span class="nav-text">Next主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Scheme选择"><span class="nav-number">1.5.2.1.</span> <span class="nav-text">Scheme选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#语言设置"><span class="nav-number">1.5.2.2.</span> <span class="nav-text">语言设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#菜单配置"><span class="nav-number">1.5.2.3.</span> <span class="nav-text">菜单配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#侧栏头像配置"><span class="nav-number">1.5.2.4.</span> <span class="nav-text">侧栏头像配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#侧栏导航配置"><span class="nav-number">1.5.2.5.</span> <span class="nav-text">侧栏导航配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#作者昵称设置"><span class="nav-number">1.5.2.6.</span> <span class="nav-text">作者昵称设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#站点描述"><span class="nav-number">1.5.2.7.</span> <span class="nav-text">站点描述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.6.</span> <span class="nav-text"></span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Next个人博客搭建"><span class="nav-number">1.</span> <span class="nav-text">Hexo+Next个人博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#本文参考链接"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">本文参考链接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装前提"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo建站"><span class="nav-number">1.3.</span> <span class="nav-text">Hexo建站</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化脚手架"><span class="nav-number">1.3.1.</span> <span class="nav-text">初始化脚手架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">1.3.2.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-json"><span class="nav-number">1.3.3.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scaffolds"><span class="nav-number">1.3.4.</span> <span class="nav-text">scaffolds</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source"><span class="nav-number">1.3.5.</span> <span class="nav-text">source</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#themes"><span class="nav-number">1.3.6.</span> <span class="nav-text">themes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地运行"><span class="nav-number">1.3.7.</span> <span class="nav-text">本地运行</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">1.4.</span> <span class="nav-text">修改站点配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网站信息"><span class="nav-number">1.4.1.</span> <span class="nav-text">网站信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网址"><span class="nav-number">1.4.2.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署配置"><span class="nav-number">1.4.3.</span> <span class="nav-text">部署配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Next主题"><span class="nav-number">1.5.</span> <span class="nav-text">Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Next"><span class="nav-number">1.5.1.</span> <span class="nav-text">安装Next</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Next主题设定"><span class="nav-number">1.5.2.</span> <span class="nav-text">Next主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Scheme选择"><span class="nav-number">1.5.2.1.</span> <span class="nav-text">Scheme选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#语言设置"><span class="nav-number">1.5.2.2.</span> <span class="nav-text">语言设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#菜单配置"><span class="nav-number">1.5.2.3.</span> <span class="nav-text">菜单配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#侧栏头像配置"><span class="nav-number">1.5.2.4.</span> <span class="nav-text">侧栏头像配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#侧栏导航配置"><span class="nav-number">1.5.2.5.</span> <span class="nav-text">侧栏导航配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#作者昵称设置"><span class="nav-number">1.5.2.6.</span> <span class="nav-text">作者昵称设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#站点描述"><span class="nav-number">1.5.2.7.</span> <span class="nav-text">站点描述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">1.6.</span> <span class="nav-text">注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Github-Pages的限制"><span class="nav-number">1.6.1.</span> <span class="nav-text">Github Pages的限制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">1.7.</span> <span class="nav-text">结语</span></a></li></ol></li></ol></div>
             
 
           </div>
