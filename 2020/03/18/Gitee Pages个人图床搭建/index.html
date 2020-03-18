@@ -118,7 +118,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Gitee Pages," />
 
 
 
@@ -129,16 +129,20 @@
 
 
 
-<meta name="description" content="Hello My Blog!">
+<meta name="description" content="前言用markdown写博客的人可能都会有插入图片的需求，那么问题来了，你的图片该放在哪儿来供自己的markdown访问？网上有很多相关的文章，但时效性并不强，我还看到过有的文章说了一堆别的图床不好，结果自己配的图片都加载不出来。从需求来说，我只是想把我文章的配图放在一个长期、稳定的链接上以供访问，那么像Github Pages这种免费的看起来就不可能会挂的地方作为自己的图床是不错的选择。但是基于">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gitee Pages个人图床搭建">
 <meta property="og:url" content="https://ff0819.github.io/blog/2020/03/18/Gitee%20Pages%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="FF&#39;s Blog">
-<meta property="og:description" content="Hello My Blog!">
+<meta property="og:description" content="前言用markdown写博客的人可能都会有插入图片的需求，那么问题来了，你的图片该放在哪儿来供自己的markdown访问？网上有很多相关的文章，但时效性并不强，我还看到过有的文章说了一堆别的图床不好，结果自己配的图片都加载不出来。从需求来说，我只是想把我文章的配图放在一个长期、稳定的链接上以供访问，那么像Github Pages这种免费的看起来就不可能会挂的地方作为自己的图床是不错的选择。但是基于">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200319001.PNG">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200319002.PNG">
 <meta property="article:published_time" content="2020-03-18T07:05:15.812Z">
-<meta property="article:modified_time" content="2020-03-18T07:05:15.812Z">
+<meta property="article:modified_time" content="2020-03-18T17:09:00.043Z">
 <meta property="article:author" content="FF">
+<meta property="article:tag" content="Gitee Pages">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200319001.PNG">
 
 
 
@@ -370,12 +374,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-03-18T15:05:15+08:00">
-                2020-03-18
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-19T01:09:00+08:00">
+                2020-03-19
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url" rel="index">
+                    <span itemprop="name">个人网站的配置与优化</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -398,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0 字
+                  1.2k 字
                 </span>
               
 
@@ -414,7 +440,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  4 分钟
                 </span>
               
             </div>
@@ -435,7 +461,63 @@
       
 
       
-        
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>用markdown写博客的人可能都会有插入图片的需求，那么问题来了，你的图片该放在哪儿来供自己的markdown访问？网上有很多相关的文章，但时效性并不强，我还看到过有的文章说了一堆别的图床不好，结果自己配的图片都加载不出来。从需求来说，我只是想把我文章的配图放在一个长期、稳定的链接上以供访问，那么像Github Pages这种免费的看起来就不可能会挂的地方作为自己的图床是不错的选择。但是基于Github Pages的限制以及国内访问Github的捉急网速，于是我想到了另一个类似Github的地方-Gitee（码云）。这篇文章主要说明了如何利用Gitee Pages来构造自己的图床。</p>
+<h5 id="本文参考链接"><a href="#本文参考链接" class="headerlink" title="本文参考链接"></a>本文参考链接</h5><p><a href="https://gitee.com/" target="_blank" rel="noopener" title="Gitee官方网站">Gitee官方网站</a></p>
+<a id="more"></a>
+
+<h3 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h3><h4 id="注册Gitee账号"><a href="#注册Gitee账号" class="headerlink" title="注册Gitee账号"></a>注册Gitee账号</h4><p>手机、邮箱都可以，建议绑定好邮箱，毕竟到时候git操作要你写邮箱你得写gitee默认的邮箱会非常麻烦。</p>
+<h4 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h4><p>这里是一个大坑，如果你在gitee上新建仓库，他可能会让你配置全局设置。但是我们之前有配置过Github，很明显我们不能按照教程来。</p>
+<p>首先,看下你的git设置是怎样的，打开git bash（注意下面所有操作都在git bash中执行，部分指令虽然可以在cmd中执行，但总归是要用git bash来添加SSH keys的操作）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">git config --global --list</span><br></pre></td></tr></table></figure>
+
+<p>如果你配置了name和email，先将他们删除掉：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset user.name</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset user.email</span><br></pre></td></tr></table></figure>
+
+<p>接下来就是重新生成SSH keys,我这里是WIN10环境下的操作，其它系统可能会有不一样的地方。</p>
+<p>进入你的用户下的.ssh文件夹内，开始创建SSH keys：</p>
+<p>github:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f id_rsa.github -C "youremail@qq.com"</span><br></pre></td></tr></table></figure>
+
+<p>gitee:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f id_rsa.github -C "youremail@qq.com"</span><br></pre></td></tr></table></figure>
+
+<p>创建过程中输入密码的地方直接空格跳过，默认密码为空。这时在你的.ssh文件夹中已经生成了这两个SSH key。</p>
+<p>现在分别去github和gitee上分别添加刚刚创建好的SSH key。把你创建的pub格式里面的字符串分别复制到相应的平台上的SSH KEY添加页面就好了。</p>
+<p>添加识别 SSH keys。默认只读取id_rsa，为了让SSH识别新的SSH key，需要将新的SSH key加入到 SSH agent 中：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~/.ssh/id_rsa.github</span><br><span class="line">ssh-add ~/.ssh/id_rsa.gitee</span><br></pre></td></tr></table></figure>
+
+<p>多账号必须配置config文件，如果你.ssh文件夹里面没有config文件，则需创建一个：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch ~/.ssh/config</span><br></pre></td></tr></table></figure>
+
+<p>然后打开config添加以下内容：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  User git </span><br><span class="line">  IdentityFile ~/.ssh/id_rsa.github</span><br><span class="line"></span><br><span class="line">Host gitee.com</span><br><span class="line">  HostName gitee.com</span><br><span class="line">  User git </span><br><span class="line">  IdentityFile ~/.ssh/id_rsa.gitee</span><br></pre></td></tr></table></figure>
+
+<p>这里好像是可以不用缩进的，不过方便看还是缩进吧。</p>
+<p>现在可以测试下连通性：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+
+<h4 id="新建图床项目"><a href="#新建图床项目" class="headerlink" title="新建图床项目"></a>新建图床项目</h4><p>我这里是按照下图的操作来的，这时复现当时的操作，这个仓库已经创建好了：</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200319001.PNG" alt="Image20200319001"></p>
+<p>接下来就是本地把这个库拉下来方便上传我们的图片了,选择好一个文件夹，然后打开git bash,执行以下操作：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@gitee.com:ff0819/imageBed.git</span><br></pre></td></tr></table></figure>
+
+<p>然后就是把你的图片放进去了，我在imagebed文件夹里新建了一个Blog文件夹，把图片按照Image+日期+编号的形式命名好全部放入这个文件夹内。顺便在imagebed文件夹里创建一个index主页，这个供到时候开Gitee Pages的时候用。</p>
+<p>另外要注意这里配置一下你的user.email，在imagebed文件夹里打开git bash:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config user.email <span class="string">"user.email@qq.com"</span></span></span><br></pre></td></tr></table></figure>
+
+<p>当你这个配置没有–global的时候，这个配置是跟着你的项目走的。</p>
+<p>最后提交刚刚新增的内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m "image commit"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>最后来配置你项目的Gitee Pages。在你项目上面一排的菜单中找到服务选项，然后点击Gitee Pages。其他我都是默认，分支我选的master，然后启动就好了。</p>
+<p>这时候我们已经可以通过一个静态地址来访问到我们刚刚上传上去的图片了：</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200319002.PNG" alt="Image20200319002"></p>
+<p>每次上传之后都要去项目的Gitee Pages页面下更新一下来重新部署你的项目。</p>
+<p>另外静态地址中，项目内部的文件名是严格区分大小写的，这里需要注意一下。</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>虽然用着Github Pages来写网站和博客，Gitee Pages却只用于做图床，看起来挺别扭的，不过就成果而言我还是满意的。图床不只是可以用作博客图片的地址，其实还有很多其他用处。</p>
+
       
     </div>
     
@@ -449,6 +531,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Gitee-Pages/" rel="tag"># Gitee Pages</a>
+          
+        </div>
       
 
       
@@ -524,8 +612,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -566,7 +663,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -612,6 +709,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#本文参考链接"><span class="nav-number">1.0.1.</span> <span class="nav-text">本文参考链接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gitee"><span class="nav-number">2.</span> <span class="nav-text">Gitee</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册Gitee账号"><span class="nav-number">2.1.</span> <span class="nav-text">注册Gitee账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH"><span class="nav-number">2.2.</span> <span class="nav-text">配置SSH</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建图床项目"><span class="nav-number">2.3.</span> <span class="nav-text">新建图床项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -639,7 +752,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.9k</span>
   
 </div>
 

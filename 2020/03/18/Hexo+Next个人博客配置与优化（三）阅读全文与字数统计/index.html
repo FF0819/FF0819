@@ -135,13 +135,18 @@
 <meta property="og:url" content="https://ff0819.github.io/blog/2020/03/18/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%89%EF%BC%89%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87%E4%B8%8E%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/index.html">
 <meta property="og:site_name" content="FF&#39;s Blog">
 <meta property="og:description" content="前言在个人博客的主要功能都实现之后，接下来就是一些裁裁剪剪的工作了。点进去你的博客，看看有没有什么不顺眼的地方？大致看过之后，我决定添加几个新的小功能。这篇文章主要说明了为博客添加阅读原文以及每篇博客显示字数统计和阅读时长的功能。 本文参考链接Swig官方文档">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200318003.PNG">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200318004.PNG">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200318005.PNG">
+<meta property="og:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200318006.PNG">
 <meta property="article:published_time" content="2020-03-18T04:11:29.610Z">
-<meta property="article:modified_time" content="2020-03-18T07:11:39.040Z">
+<meta property="article:modified_time" content="2020-03-18T17:18:26.073Z">
 <meta property="article:author" content="FF">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Next">
 <meta property="article:tag" content="Swig">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ff0819.gitee.io/imagebed/Blog/Image20200318003.PNG">
 
 
 
@@ -373,8 +378,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-03-18T15:11:39+08:00">
-                2020-03-18
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-19T01:18:26+08:00">
+                2020-03-19
               </time>
             
           </span>
@@ -468,9 +473,9 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Automatically Excerpt. Not recommend.</span></span><br><span class="line"><span class="comment"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</span></span><br><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
 <p>当然你会看到备注上写着”Not recommend”，然后给出了另外一种方法：在自己的markdown文档中添加标注来让你自由地选择该放多少内容在阅读原文前面。</p>
 <p>这里我也尝试过用不推荐的方法也就是打开自动摘录的功能，然后会发现你的首页文章成了这个样子：</p>
-<p>Image20200318003</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200318003.PNG" alt="Image20200318003"></p>
 <p>前言这么一个标题直接混进摘要内容里去了，那么我再用标注的方法来对比一下效果：</p>
-<p>Image20200318004</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200318004.PNG" alt="Image20200318004"></p>
 <p>根据我的书写习惯，我会在文章开头写前言，并把一些重要的参考链接放在前言里面。所以我只需要在前言部分后面添加上标注就好：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">### 前言</span></span><br><span class="line"></span><br><span class="line">紧接着上一篇 [<span class="string">Hexo+Next个人博客配置与优化（一）标签与分类</span>](<span class="link">https://ff0819.github.io/blog/2020/03/17/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E7%AD%BE%E4%B8%8E%E5%88%86%E7%B1%BB/ "Hexo+Next个人博客配置与优化（一）标签与分类"</span>) 来说，分类和标签的基本功能肯定还达不到我们对一个个人博客功能的要求。而Next为我们提供了丰富的第三方服务集成的选项，在官方网站中对第三方服务也有文档说明配置操作。</span><br><span class="line"></span><br><span class="line"><span class="section">##### 本文参考链接</span></span><br><span class="line"></span><br><span class="line">[<span class="string">Next官方使用文档</span>](<span class="link">http://theme-next.iissnan.com/ "Next官方使用文档"</span>)</span><br><span class="line">[<span class="string">来必力官网</span>](<span class="link">http://livere.com/ "来必力官网"</span>)</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="section">### 评论系统-来必力</span></span><br></pre></td></tr></table></figure>
 
@@ -492,7 +497,7 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">item_text:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">created_at:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">updated_at:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <p>可以来看看效果：</p>
-<p>Image20200318005</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200318005.PNG" alt="Image20200318005"></p>
 <p>很显然字数统计和阅读时长只把数字显示出来了，需要给他们配上单位。这里用的方法不再是简单的修改配置文件了，而是修改主题的样式。</p>
 <p>打开your_site\themes\next\layout_macro\post.swig，找到字数相应部分：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('post.wordcount') &#125;&#125;"</span>&gt;</span></span><br><span class="line">    &#123;&#123; wordcount(post.content) &#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -504,7 +509,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('post.min2read') &#125;&#125;"</span>&gt;</span></span><br><span class="line">    &#123;&#123; min2read(post.content) &#125;&#125; 分钟</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>再来看看效果：</p>
-<p>Image20200318006</p>
+<p><img src="https://ff0819.gitee.io/imagebed/Blog/Image20200318006.PNG" alt="Image20200318006"></p>
 <p>现在这个功能算是完美实现了，修改swig也算是为我们提供了一种个性化定制我们博客的方案。</p>
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>从这些方案可以看出，想要达到某种效果可能有很多种方案去实现，而越往细节走官方提供的文档支持是越少的。而作为开发人员自然是自己动手丰衣足食。next采用的模板引擎是swig，在上面修改字数统计和阅读时长时我们也接触到了swig的文件。所以后面如果我们想能够对next有更多的了解，进行更加个性化的定制，最基础的还是先要了解和学习一下swig的语法知识，了解他的常用用法。最后放上Swig的官方文档：<br><a href="http://node-swig.github.io/swig-templates/" target="_blank" rel="noopener" title="Swig官方文档">Swig官方文档</a></p>
 
@@ -661,7 +666,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -750,7 +755,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.9k</span>
   
 </div>
 
