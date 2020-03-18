@@ -118,7 +118,7 @@
 
 
 
-  <meta name="keywords" content="Github Pages," />
+  <meta name="keywords" content="Hexo,Next,CSS," />
 
 
 
@@ -129,16 +129,18 @@
 
 
 
-<meta name="description" content="前言前几天尝试了一下通过Github Pages搭建了一个个人博客，用的是Hexo+Next的模板。这段时间学习了一点前端之后想自己捣腾一下，但是以我现在的前端水平想在模板上自由发挥可能会出现很多问题。于是，我想把原来的个人博客作为一个项目站点放在我的 username.github.io&#x2F;blog 里面, 而把 username.github.io 用作一个导航主页。这样的一个结构我在项目里面自">
+<meta name="description" content="前言之前提到过通过修改Swig模板引擎来个性化定制个人博客，这次我们来通过修改custom.styl文件来修改我们博客中的一些样式的配置。这篇文章主要说明了用stylus的语法修改博客中的某些内容的CSS样式来实现我们想要的效果。 本文参考链接stylus官方文档">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github Pages个人网站搭建">
-<meta property="og:url" content="https://ff0819.github.io/blog/2020/03/15/Github%20Pages%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:title" content="Hexo+Next个人博客配置与优化（四）通过custom.styl修改标题样式">
+<meta property="og:url" content="https://ff0819.github.io/blog/2020/03/18/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E5%9B%9B%EF%BC%89%E9%80%9A%E8%BF%87custom.styl%E4%BF%AE%E6%94%B9%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F/index.html">
 <meta property="og:site_name" content="FF&#39;s Blog">
-<meta property="og:description" content="前言前几天尝试了一下通过Github Pages搭建了一个个人博客，用的是Hexo+Next的模板。这段时间学习了一点前端之后想自己捣腾一下，但是以我现在的前端水平想在模板上自由发挥可能会出现很多问题。于是，我想把原来的个人博客作为一个项目站点放在我的 username.github.io&#x2F;blog 里面, 而把 username.github.io 用作一个导航主页。这样的一个结构我在项目里面自">
-<meta property="article:published_time" content="2020-03-15T08:31:13.131Z">
-<meta property="article:modified_time" content="2020-03-18T04:46:23.628Z">
+<meta property="og:description" content="前言之前提到过通过修改Swig模板引擎来个性化定制个人博客，这次我们来通过修改custom.styl文件来修改我们博客中的一些样式的配置。这篇文章主要说明了用stylus的语法修改博客中的某些内容的CSS样式来实现我们想要的效果。 本文参考链接stylus官方文档">
+<meta property="article:published_time" content="2020-03-18T06:00:45.925Z">
+<meta property="article:modified_time" content="2020-03-18T07:09:57.849Z">
 <meta property="article:author" content="FF">
-<meta property="article:tag" content="Github Pages">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Next">
+<meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
 
 
@@ -169,13 +171,13 @@
 
 
 
-  <link rel="canonical" href="https://ff0819.github.io/blog/2020/03/15/Github Pages个人网站搭建/"/>
+  <link rel="canonical" href="https://ff0819.github.io/blog/2020/03/18/Hexo+Next个人博客配置与优化（四）通过custom.styl修改标题样式/"/>
 
 
 
 
 
-  <title>Github Pages个人网站搭建 | FF's Blog</title>
+  <title>Hexo+Next个人博客配置与优化（四）通过custom.styl修改标题样式 | FF's Blog</title>
   
 
 
@@ -326,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ff0819.github.io/blog/blog/2020/03/15/Github%20Pages%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">
+    <link itemprop="mainEntityOfPage" href="https://ff0819.github.io/blog/blog/2020/03/18/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E5%9B%9B%EF%BC%89%E9%80%9A%E8%BF%87custom.styl%E4%BF%AE%E6%94%B9%E6%A0%87%E9%A2%98%E6%A0%B7%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FF">
@@ -343,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Github Pages个人网站搭建</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo+Next个人博客配置与优化（四）通过custom.styl修改标题样式</h1>
         
 
         <div class="post-meta">
@@ -355,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-15T16:31:13+08:00">
-                2020-03-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-18T14:00:45+08:00">
+                2020-03-18
               </time>
             
 
@@ -371,7 +373,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-03-18T12:46:23+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-18T15:09:57+08:00">
                 2020-03-18
               </time>
             
@@ -390,8 +392,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url" rel="index">
-                    <span itemprop="name">个人网站的配置与优化</span>
+                  <a href="/blog/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96/" itemprop="url" rel="index">
+                    <span itemprop="name">个人博客的配置与优化</span>
                   </a>
                 </span>
 
@@ -421,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  938 字
+                  1.2k 字
                 </span>
               
 
@@ -437,7 +439,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -458,31 +460,47 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前几天尝试了一下通过Github Pages搭建了一个个人博客，用的是Hexo+Next的模板。这段时间学习了一点前端之后想自己捣腾一下，但是以我现在的前端水平想在模板上自由发挥可能会出现很多问题。于是，我想把原来的个人博客作为一个项目站点放在我的 username.github.io/blog 里面, 而把 username.github.io 用作一个导航主页。这样的一个结构我在项目里面自由发挥也不会影响到博客的稳定性，同时也能将博客的更新和代码的提交记录区分开来，后期也会便于修改维护。</p>
-<h5 id="本文参考链接"><a href="#本文参考链接" class="headerlink" title="本文参考链接"></a>本文参考链接</h5><p><a href="https://pages.github.com/" target="_blank" rel="noopener" title="Github Pages官方网站">Github Pages官方网站</a></p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前提到过通过修改Swig模板引擎来个性化定制个人博客，这次我们来通过修改custom.styl文件来修改我们博客中的一些样式的配置。这篇文章主要说明了用stylus的语法修改博客中的某些内容的CSS样式来实现我们想要的效果。</p>
+<h5 id="本文参考链接"><a href="#本文参考链接" class="headerlink" title="本文参考链接"></a>本文参考链接</h5><p><a href="https://stylus.bootcss.com/" target="_blank" rel="noopener" title="stylus官方文档">stylus官方文档</a></p>
 <a id="more"></a>
 
-<h3 id="第一步-创建主页项目"><a href="#第一步-创建主页项目" class="headerlink" title="第一步 创建主页项目"></a>第一步 创建主页项目</h3><h4 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h4><p>首先是创建一个以 username.github.io 为名的项目，其中username必须与你github的username相同，这样Github Pages会自动把这个域名与你的项目绑定在一起。项目创建完成之后，进入到项目的Settings-&gt;Options-&gt;Github Pages, 状态应该与下图类似。</p>
-<p>图片：Image20200314001</p>
-<h4 id="上传主页文件"><a href="#上传主页文件" class="headerlink" title="上传主页文件"></a>上传主页文件</h4><p>这里以搭建网站结构为主，我们项目中先放一个带博客导航的主页index.html就可以了</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>FF's Web<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">b</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://ff0819.github.io/blog/"</span>&gt;</span>FF's Blog<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="修改博客标题样式"><a href="#修改博客标题样式" class="headerlink" title="修改博客标题样式"></a>修改博客标题样式</h3><h4 id="修改思路"><a href="#修改思路" class="headerlink" title="修改思路"></a>修改思路</h4><p>话不多说直接放图：</p>
+<p>Image20200318006</p>
+<p>我从一开始就想把这个标题的样式给改掉了，但是官方并没有提供相应的文档，那么我就得自己去琢磨怎么改这个地方了。这时你去翻阅网上的博客你会发现，很多人在用Next主题定制自己的博客时，会去在custom.styl文件里写配置信息，而且格式和CSS十分相似，于是我便去查了下styl文件到底是什么：</p>
+<p><a href="https://stylus.bootcss.com/" target="_blank" rel="noopener" title="stylus官方文档">stylus官方文档</a></p>
+<p>当然我这里可以理解为，这是一个容错率更高的CSS文件，换个思路想，我去用CSS的写法去写肯定是没问题的对吧（当然这是在我不想花时间去理解styl的精髓而采取的无脑方法）。</p>
+<h4 id="修改标题背景"><a href="#修改标题背景" class="headerlink" title="修改标题背景"></a>修改标题背景</h4><p>既然我们是修改HTML中某一元素的样式，那么我们最直接的方法就是用浏览器的开发者工具去定位我们需要修改的主体到底是什么就好了：</p>
+<p>Image20200318007</p>
+<p>你可以看到他的CSS定义是这样的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.brand</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#222</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="第二步-创建博客项目"><a href="#第二步-创建博客项目" class="headerlink" title="第二步 创建博客项目"></a>第二步 创建博客项目</h3><h4 id="创建github仓库-1"><a href="#创建github仓库-1" class="headerlink" title="创建github仓库"></a>创建github仓库</h4><p>同样是在Github上创建一个项目，这次对项目名没有什么特别的要求（在主页项目对项目名的要求是为了让默认域名可以自动绑定到主页项目的静态网页上）。</p>
-<h4 id="配置Github-Pages"><a href="#配置Github-Pages" class="headerlink" title="配置Github Pages"></a>配置Github Pages</h4><p>然后便是对项目的Github Pages进行设定。进入项目的Settings-&gt;Options-&gt;Github Pages设定部分，将你的Source选择为你所想要展示的分支（如果你的域名是自己的而不是github分配的默认域名那么你可能需要在Custom domain中配置）。</p>
-<p>现在你已经可以通过 <a href="https://username.github.io/repositoryname" target="_blank" rel="noopener">https://username.github.io/repositoryname</a> 来访问到你博客项目的页面了，你可以上传一个最简单的页面进行测试。</p>
-<p>这里与主页的配置区别就是Github Pages的设置需要自己动手去修改，毕竟不可能你每个新创建的项目就要放在Github Pages上展示的对吧。而主页因为你的项目名的特殊性自然就直接绑定在了分配给你的域名下面。</p>
-<h4 id="上传博客项目"><a href="#上传博客项目" class="headerlink" title="上传博客项目"></a>上传博客项目</h4><p>博客项目的搭建参考我的另一篇文章：</p>
-<p><a href="https://ff0819.github.io/blog/2020/03/15/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="Hexo+Next个人博客搭建
-">Hexo+Next个人博客搭建</a></p>
-<h3 id="其他项目"><a href="#其他项目" class="headerlink" title="其他项目"></a>其他项目</h3><p>其他项目同博客项目操作方法一致，不过需要你在主页项目中做好相应的链接，当然你也可以直接通过 <a href="https://username.github.io/repositoryname" target="_blank" rel="noopener">https://username.github.io/repositoryname</a> 来访问。</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><h4 id="Github-Pages的限制"><a href="#Github-Pages的限制" class="headerlink" title="Github Pages的限制"></a>Github Pages的限制</h4><p>Github Pages 并不是无限存储和无限流量的静态站点服务，一些限制如下：</p>
-<ul>
-<li>内容存储不能超过1GB。</li>
-<li>每个月100GB流量带宽。</li>
-<li>每小时编译构建次数不超过10次。</li>
-</ul>
-<p>更多参看官方说明：<a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits" target="_blank" rel="noopener" title="Github Pages官方文档">Github Pages官方文档</a></p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这篇文章主要是说明Github Pages的一些操作方法和注意事项。我目前还没想好主页该做成什么样子，博客则是已经有了想法后续会放出来并对相应的操作写进博客进行记录。</p>
+<p>那么我们需要做的就很简单了，去custom.styl把brand类添加一个透明属性，因为我根本就不想要这个方形黑框显示在我的博客标题上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.brand</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: transparent; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改标题文字"><a href="#修改标题文字" class="headerlink" title="修改标题文字"></a>修改标题文字</h4><p>同样的因为我们的标题背景变成透明的了，我需要把我的标题内容文字的颜色也修改以下，同样的用浏览器开发者工具去定位，你可以找到标题文字部分的HTML是这样的：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-title"</span> <span class="attr">style</span>=<span class="string">"opacity: 1; top: 0px;"</span>&gt;</span>FF's Blog<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>所以我们只需要在custom.styl中添加：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.site-title</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">64</span>,<span class="number">64</span>,<span class="number">64</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里说明一点，我们修改的属性是会覆盖原来赋予的属性值的，这一点也很好理解。如果你在HTML中外连两个CSS样式，如果这两个样式中都对同一类的同一属性赋予了不同的值，是最后面的一个属性值会覆盖掉前面的属性值。我想这里应该是一样的原理。</p>
+<p>这里我还需要修改一下文字的大小以及文字的字体，不过这里是在配置文件中有集成，所以我们去主题配置文件修改就好了,这里还有一些我的其他部分字体及大小的修改：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># Font Settings</span></span><br><span class="line"><span class="comment"># - Find fonts on Google Fonts (https://www.google.com/fonts)</span></span><br><span class="line"><span class="comment"># - All fonts set here will have the following styles:</span></span><br><span class="line"><span class="comment">#     light, light italic, normal, normal italic, bold, bold italic</span></span><br><span class="line"><span class="comment"># - Be aware that setting too much fonts will cause site running slowly</span></span><br><span class="line"><span class="comment"># - Introduce in 5.0.1</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># CAUTION! Safari Version 10.1.2 <span class="doctag">bug:</span> https://github.com/iissnan/hexo-theme-next/issues/1844</span></span><br><span class="line"><span class="comment"># To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):</span></span><br><span class="line"><span class="comment"># Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Uri of fonts host. E.g. //fonts.googleapis.com (Default).</span></span><br><span class="line">  <span class="attr">host:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font options:</span></span><br><span class="line">  <span class="comment"># `external: true` will load this font family from `host` above.</span></span><br><span class="line">  <span class="comment"># `family: Times New Roman`. Without any quotes.</span></span><br><span class="line">  <span class="comment"># `size: xx`. Use `px` as unit.</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Global font settings used on &lt;body&gt; element.</span></span><br><span class="line">  <span class="attr">global:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">Monda</span></span><br><span class="line">    <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for Headlines (h1, h2, h3, h4, h5, h6).</span></span><br><span class="line">  <span class="comment"># Fallback to `global` font settings.</span></span><br><span class="line">  <span class="attr">headings:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">Monda</span></span><br><span class="line">    <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts.</span></span><br><span class="line">  <span class="comment"># Fallback to `global` font settings.</span></span><br><span class="line">  <span class="attr">posts:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">Monda</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for Logo.</span></span><br><span class="line">  <span class="comment"># Fallback to `global` font settings.</span></span><br><span class="line">  <span class="attr">logo:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">Trade</span> <span class="string">Winds</span></span><br><span class="line">    <span class="attr">size:</span> <span class="number">60</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line">  <span class="attr">codes:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">PT</span> <span class="string">Mono</span></span><br><span class="line">    <span class="attr">size:</span></span><br></pre></td></tr></table></figure>
+
+<p>备注也说明了，你需要什么字体还可以去 <a href="https://www.google.com/fonts" target="_blank" rel="noopener">https://www.google.com/fonts</a> 上面查看。</p>
+<h4 id="删除顶部的黑线"><a href="#删除顶部的黑线" class="headerlink" title="删除顶部的黑线"></a>删除顶部的黑线</h4><p>你可以通过同样的方法定位到顶部黑线的样式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.headband</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#222</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后直接把display属性设置为none就好了：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.headband</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>:none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="完成结果"><a href="#完成结果" class="headerlink" title="完成结果"></a>完成结果</h4><p>直接上图：</p>
+<p>Image20200318008</p>
+<p>顺便加上Next的自带动画，修改主题配置文件：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Canvas-nest</span></span><br><span class="line"><span class="attr">canvas_nest:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>这是我比较喜欢的一个自带的动画，你也可以尝试下其他的动画效果，不过要注意一次只能开启其中一个。</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这里介绍了另外一种定制自己博客的方法思路，结合之前的修改swig的方法，应该可以做到大部分想要的效果。而且慢慢地也更偏向于理解并修改前端代码而不只是简单的配置参数了。</p>
 
       
     </div>
@@ -500,7 +518,11 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Github-Pages/" rel="tag"># Github Pages</a>
+            <a href="/blog/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/blog/tags/Next/" rel="tag"># Next</a>
+          
+            <a href="/blog/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -513,8 +535,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2020/03/15/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="next" title="Hexo+Next个人博客搭建">
-                <i class="fa fa-chevron-left"></i> Hexo+Next个人博客搭建
+              <a href="/blog/2020/03/18/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%89%EF%BC%89%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87%E4%B8%8E%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1/" rel="next" title="Hexo+Next个人博客配置与优化（三）阅读全文与字数统计">
+                <i class="fa fa-chevron-left"></i> Hexo+Next个人博客配置与优化（三）阅读全文与字数统计
               </a>
             
           </div>
@@ -523,8 +545,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/2020/03/17/Hexo+Next%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E7%AD%BE%E4%B8%8E%E5%88%86%E7%B1%BB/" rel="prev" title="Hexo+Next个人博客配置与优化（一）标签与分类">
-                Hexo+Next个人博客配置与优化（一）标签与分类 <i class="fa fa-chevron-right"></i>
+              <a href="/blog/2020/03/18/Gitee%20Pages%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" rel="prev" title="Gitee Pages个人图床搭建">
+                Gitee Pages个人图床搭建 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -688,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#本文参考链接"><span class="nav-number">1.0.1.</span> <span class="nav-text">本文参考链接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步-创建主页项目"><span class="nav-number">2.</span> <span class="nav-text">第一步 创建主页项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建github仓库"><span class="nav-number">2.1.</span> <span class="nav-text">创建github仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#上传主页文件"><span class="nav-number">2.2.</span> <span class="nav-text">上传主页文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步-创建博客项目"><span class="nav-number">3.</span> <span class="nav-text">第二步 创建博客项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建github仓库-1"><span class="nav-number">3.1.</span> <span class="nav-text">创建github仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Github-Pages"><span class="nav-number">3.2.</span> <span class="nav-text">配置Github Pages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#上传博客项目"><span class="nav-number">3.3.</span> <span class="nav-text">上传博客项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他项目"><span class="nav-number">4.</span> <span class="nav-text">其他项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">5.</span> <span class="nav-text">注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Github-Pages的限制"><span class="nav-number">5.1.</span> <span class="nav-text">Github Pages的限制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#本文参考链接"><span class="nav-number">1.0.1.</span> <span class="nav-text">本文参考链接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改博客标题样式"><span class="nav-number">2.</span> <span class="nav-text">修改博客标题样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改思路"><span class="nav-number">2.1.</span> <span class="nav-text">修改思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改标题背景"><span class="nav-number">2.2.</span> <span class="nav-text">修改标题背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改标题文字"><span class="nav-number">2.3.</span> <span class="nav-text">修改标题文字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除顶部的黑线"><span class="nav-number">2.4.</span> <span class="nav-text">删除顶部的黑线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完成结果"><span class="nav-number">2.5.</span> <span class="nav-text">完成结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
